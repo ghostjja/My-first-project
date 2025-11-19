@@ -1,5 +1,9 @@
+allowed_words = ('Русский','Английский','Russian','English')
+
 i =(input('Выберите язык: Русский или Английский / Select language: Russian or English:'))
 
+if i not in allowed_words:
+    print('Error / Ошибка')
 if  i == 'Русский' or i == 'Russian':
     a = int(input(' Сколько вам лет?: '))
     if a > 100:
